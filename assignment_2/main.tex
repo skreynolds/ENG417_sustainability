@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Jacobs Landscape Poster
+% LaTeX Template
+% Version 1.1 (14/06/14)
+%
+% Created by:
+% Computational Physics and Biophysics Group, Jacobs University
+% https://teamwork.jacobs-university.de:8443/confluence/display/CoPandBiG/LaTeX+Poster
+% 
+% Further modified by:
+% Nathaniel Johnston (nathaniel@njohnston.ca)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[final]{beamer}
+
+\usepackage[scale=1.24]{beamerposter} % Use the beamerposter package for laying out the poster
+
+\usetheme{confposter} % Use the confposter theme supplied with this template
+
+\setbeamercolor{block title}{fg=ngreen,bg=white} % Colors of the block titles
+\setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
+\setbeamercolor{block alerted title}{fg=white,bg=dblue!70} % Colors of the highlighted block titles
+\setbeamercolor{block alerted body}{fg=black,bg=dblue!10} % Colors of the body of highlighted blocks
+% Many more colors are available for use in beamerthemeconfposter.sty
+
+%-----------------------------------------------------------
+% Define the column widths and overall poster size
+% To set effective sepwid, onecolwid and twocolwid values, first choose how many columns you want and how much separation you want between columns
+% In this template, the separation width chosen is 0.024 of the paper width and a 4-column layout
+% onecolwid should therefore be (1-(# of columns+1)*sepwid)/# of columns e.g. (1-(4+1)*0.024)/4 = 0.22
+% Set twocolwid to be (2*onecolwid)+sepwid = 0.464
+% Set threecolwid to be (3*onecolwid)+2*sepwid = 0.708
+
+\newlength{\sepwid}
+\newlength{\onecolwid}
+\newlength{\twocolwid}
+\newlength{\threecolwid}
+\setlength{\paperwidth}{48in} % A0 width: 46.8in
+\setlength{\paperheight}{36in} % A0 height: 33.1in
+\setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
+\setlength{\onecolwid}{0.22\paperwidth} % Width of one column
+\setlength{\twocolwid}{0.464\paperwidth} % Width of two columns
+\setlength{\threecolwid}{0.708\paperwidth} % Width of three columns
+\setlength{\topmargin}{-0.5in} % Reduce the top margin size
+%-----------------------------------------------------------
+
+\usepackage{graphicx}  % Required for including images
+
+\usepackage{booktabs} % Top and bottom rules for tables
+
+\graphicspath{{./fig/}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+
+\title{ENG417 Sustainability} % Poster title
+
+\author{Shane Reynolds} % Author(s)
+
+\institute{Role Play 1: Australia's Legacy Mine Sites} % Institution(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\addtobeamertemplate{block end}{}{\vspace*{2ex}} % White space under blocks
+\addtobeamertemplate{block alerted end}{}{\vspace*{2ex}} % White space under highlighted (alert) blocks
+
+\setlength{\belowcaptionskip}{2ex} % White space under figures
+\setlength\belowdisplayshortskip{2ex} % White space under equations
+
+\begin{frame}[t] % The whole poster is enclosed in one beamer frame
+
+\begin{columns}[t] % The whole poster consists of three major columns, the second of which is split into two columns twice - the [t] option aligns each column's content to the top
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid} % The first column
+
+%----------------------------------------------------------------------------------------
+%	BACKGROUND
+%----------------------------------------------------------------------------------------
+
+\begin{alertblock}{Background}
+
+\small Following the Global Financial Crisis of 2007, budgets are cash-poor but Australia's mines have left, and will continue to leave a legacy of waste and potential pollution that will require rem
+
+\end{alertblock}
+
+%----------------------------------------------------------------------------------------
+%	WHAT STAGES OF THE MINING LIFE CYCLE POSE ENVIRONMENTAL RISK
+%----------------------------------------------------------------------------------------
+
+\begin{block}{What stages of the mining life cycle pose environmental risk?}
+\small
+\begin{itemize}
+	\item Extractive mining operations are typically environmentally adverse and can deposit waste rock, tailings, acid mine drainage, airborne dust, and other contaminants on the land, in the air, and in the water \cite{Widerlund:2014}.
+	\item Mines, unlike other production industry, typically have a finite life span, which concludes when the natural resources are depleted. The life cycle of a mine can be broken up into 6 phases: exploration, feasibility, planning and design, construction/commissioning, operations, and decommissioning and closure. \cite{ntg:2006}
+	\item Mine closure carries high social and environmental risk if proper rehabilitation is not carried out. Rehabilitation is the process used to repair the impacts of mining on the environment and can include: backfilling open pit voids or filling voids with groundwater; covering ore with a layer of clay to prevent sulfuric acid run off; or re-establishing native vegetation. \cite{Campbell(NSW):2017, Campbell(VIC):2017}
+	\item Commodity prices can be volatile and negative fluctuations may result in unprofitable operation. In response, mines often transition into an ancillary  low cost holding phase referred to as \textit{Care and Maintenance}. This allows the mining company to mothball the operation until commodity prices recover. \cite{Campbell(NSW):2017, Campbell(VIC):2017}
+\end{itemize}
+
+\end{block}
+
+%------------------------------------------------
+
+\begin{figure}
+	\includegraphics[width=0.8\linewidth]{op_cash.jpg}
+	\caption{Operational cash flow timeseries.}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the first column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
+
+\begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
+
+%----------------------------------------------------------------------------------------
+%	WHAT IS THE CURRENT REGULATORY ENVIRONMENT
+%----------------------------------------------------------------------------------------
+
+\begin{block}{What is the current regulatory environment?}
+\small
+\begin{itemize}
+	\item The Australian Federal government is not formally involved in managing mineral resources activity, but can intervene if justified under the Environmental Protection and Biodiversity Conservation Act. \cite{Chambers:2007}
+	\item State and Territory environmental legislation regulate air, water, land, and noise pollutions. Additionally, they are responsible for the protection of flora and fauna. \cite{Blake:2011}
+	\item Although the States and Territories administer differing environmental legislation, there are some common aspects. For example, most governments use bond instruments to secure funds from the mining company, which provide guarantees for rehabilitation scheme execution should the mining company face insolvency. \cite{GWA:2018}
+	\item More recently, some states have established rehabilitation funds, which mining companies are mandated to contribute to regularly according to the estimated cost of their rehabilitation plan, or as part of the royalty due from mineral extraction per tonne. \cite{SAG:2018}
+\end{itemize}
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+
+\begin{column}{\onecolwid}\vspace{-.6in} % The second column within column 2 (column 2.2)
+
+%----------------------------------------------------------------------------------------
+%	METHODS
+%----------------------------------------------------------------------------------------
+\begin{block}{Is there any evidence of mining companies behaving badly?}
+\small
+\begin{itemize}
+	\item Historically, it has been common for Australian mines to be abandoned when mining ceased, given there was no legal requirement for rehabilitation. In recent times, Australian public appetite for environmentally concious decision making have led State and Territory government to introduce legislation to ensure mining companies are legally responsible for rehabilitating mine sites once mining is complete. \cite{Commonwealth:2006}
+	\item It must be acknowledged that there are a significant number of abandoned mines from times of pre-rehabilitation legislation, however, there is disappointing evidence to suggest that mining companies do not take rehabilitation seriously, and abandonment persists as an issue. Additionally, whilst there are legitimate cases for the ancillary \textit{Care and Maintenance} phase, there appears to be increased usage of this phase to defer rehabilitation indefinitely. \cite{Campbell(NSW):2017, Campbell(VIC):2017}
+	\item In many cases, when rehabilitation does take place, the quality of the outcomes have been poor. \cite{Lamb:2015}
+\end{itemize}
+	
+\end{block}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
+
+%----------------------------------------------------------------------------------------
+%	MAIN ARGUEMENT IN ONE PARAGRAPH
+%----------------------------------------------------------------------------------------
+
+\begin{alertblock}{Argument Summary}
+
+\small Despite greater public appetite for environmental protection, and stricter legislative requirements requiring rehabilitation of closed mines, there is evidence that mining companies are not taking these responsibilities seriously, or worse, circumventing the rehabilitation phase indefinitely. Bond instruments and, more recently, rehabilitation funds provide some assurance that rehabilitation will be undertaken, but there may be scope to regulate further in this space. Generally, mining companies have strong operational cash flows both from a historical perspective, and when compared to other industries. This places them well to absorb additional regulatory burden. Concerns about the loss of economic activity in the mining sector due to increased regulation may be overblown as studies show decisions on mining company operational location places more emphasis on political and economic stability (in addition to geological resources), compared to the level of environmental regulation.
+
+\end{alertblock} 
+
+%----------------------------------------------------------------------------------------
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
+
+\begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
+
+%----------------------------------------------------------------------------------------
+%	MATHEMATICAL SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Are Australian mining companies cash poor, or in financial duress?}
+\small
+\begin{itemize}
+	\item The Global Financial Crisis coincided with an increase in mining company cash balances as the appetite for risk dried up and investment spending fell, shown in Figure 1. \cite{RBA:2015}
+	\item Commodity prices recovered in 2011 which saw renewed investment which was in part funded by cash rich balance sheets. More recently statistics have been published showing that the top 50 mid-size mining companies operating cash flows are up by 35\%. \cite{PWC:2017} 
+\end{itemize}
+	
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+
+\begin{column}{\onecolwid} % The second column within column 2 (column 2.2)
+
+%----------------------------------------------------------------------------------------
+%	RESULTS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Does imposing overly restrictive regulation reduce economic activity in the mining sector?}
+	\small
+	\begin{itemize}
+		\item Environmental regulation is required to control pollution, however, this increases operational costs for mining companies. This relationship may suggest that a by product of reduced economic activity may result. \cite{Soderholm:2015}
+		\item Studies have shown, however, that geological potential and overall political stability rank as higher interests over environmental regulations, when deciding on mining operation location. \cite{Tole:2011}
+	\end{itemize}
+	
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2
+
+\end{column} % End of the second column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid} % The third column
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\begin{block}{References}
+\nocite{*} % Insert publications even if they are not cited in the poster
+\footnotesize{\bibliographystyle{unsrt}
+\bibliography{my_bib}\vspace{0.75in}}
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the third column
+
+\end{columns} % End of all the columns in the poster
+
+\end{frame} % End of the enclosing frame
+
+\end{document}

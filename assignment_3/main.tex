@@ -1,0 +1,266 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Jacobs Landscape Poster
+% LaTeX Template
+% Version 1.1 (14/06/14)
+%
+% Created by:
+% Computational Physics and Biophysics Group, Jacobs University
+% https://teamwork.jacobs-university.de:8443/confluence/display/CoPandBiG/LaTeX+Poster
+% 
+% Further modified by:
+% Nathaniel Johnston (nathaniel@njohnston.ca)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[final]{beamer}
+
+\usepackage[scale=1.24]{beamerposter} % Use the beamerposter package for laying out the poster
+
+\usetheme{confposter} % Use the confposter theme supplied with this template
+
+\setbeamercolor{block title}{fg=ngreen,bg=white} % Colors of the block titles
+\setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
+\setbeamercolor{block alerted title}{fg=white,bg=dblue!70} % Colors of the highlighted block titles
+\setbeamercolor{block alerted body}{fg=black,bg=dblue!10} % Colors of the body of highlighted blocks
+% Many more colors are available for use in beamerthemeconfposter.sty
+
+%-----------------------------------------------------------
+% Define the column widths and overall poster size
+% To set effective sepwid, onecolwid and twocolwid values, first choose how many columns you want and how much separation you want between columns
+% In this template, the separation width chosen is 0.024 of the paper width and a 4-column layout
+% onecolwid should therefore be (1-(# of columns+1)*sepwid)/# of columns e.g. (1-(4+1)*0.024)/4 = 0.22
+% Set twocolwid to be (2*onecolwid)+sepwid = 0.464
+% Set threecolwid to be (3*onecolwid)+2*sepwid = 0.708
+
+\newlength{\sepwid}
+\newlength{\onecolwid}
+\newlength{\twocolwid}
+\newlength{\threecolwid}
+\setlength{\paperwidth}{48in} % A0 width: 46.8in
+\setlength{\paperheight}{36in} % A0 height: 33.1in
+\setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
+\setlength{\onecolwid}{0.22\paperwidth} % Width of one column
+\setlength{\twocolwid}{0.464\paperwidth} % Width of two columns
+\setlength{\threecolwid}{0.708\paperwidth} % Width of three columns
+\setlength{\topmargin}{-0.5in} % Reduce the top margin size
+%-----------------------------------------------------------
+
+\usepackage{graphicx}  % Required for including images
+
+\usepackage{booktabs} % Top and bottom rules for tables
+
+\graphicspath{{./fig/}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+
+\title{ENG417 Sustainability} % Poster title
+
+\author{Shane Reynolds} % Author(s)
+
+\institute{Role Play 1: PFAS Contamination of the groundwater around Katherine, NT} % Institution(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\addtobeamertemplate{block end}{}{\vspace*{2ex}} % White space under blocks
+\addtobeamertemplate{block alerted end}{}{\vspace*{2ex}} % White space under highlighted (alert) blocks
+
+\setlength{\belowcaptionskip}{2ex} % White space under figures
+\setlength\belowdisplayshortskip{2ex} % White space under equations
+
+\begin{frame}[t] % The whole poster is enclosed in one beamer frame
+
+\begin{columns}[t] % The whole poster consists of three major columns, the second of which is split into two columns twice - the [t] option aligns each column's content to the top
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid} % The first column
+
+%----------------------------------------------------------------------------------------
+%	BACKGROUND
+%----------------------------------------------------------------------------------------
+
+\begin{alertblock}{Background}
+
+\small The residents of Katherine, NT have experienced perfluorooctanesulphonic acid (PFOS) and perfluorooctanoic acid (PFOA) contamination, as a result of fire fighting activities on the local RAAF base at Tindall, of the local aquifier and Katherine River from which the town drinking water supply is drawn. As a result, water treatment measures have had to be implemented at considerable cost. There is now no PFAS detectable at levels exceeding Australian Drinking Water Guidelines. Investigate alternative water supply from the perspective of a town resident, given that the alternative source may need to continue providing water for up to two years.
+
+\end{alertblock}
+
+%----------------------------------------------------------------------------------------
+%	WHAT STAGES OF THE MINING LIFE CYCLE POSE ENVIRONMENTAL RISK
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Has the water supply actually been contaminated?}
+\small
+\begin{itemize}
+	\item Aqueous film-forming foam (AFFF) is a fire-fighting foam containing PFAS compounds that was used at the RAAF Tindal base for approximately 16 years, since 1988. \cite{McLennan:2018}
+	\item PFAS has been shown to leave the base via surface water run-off to Tindal creek. \cite{Richards1:2018}
+	\item Contamination also occurred due to PFAS leaching from soils on the Tindal base to the underlying Tindal Aquifier. \cite{DoD1:2018}
+	\item Tests have been found PFAS in the Katherine River down-stream to the Sturt Highway, and in bore supplied by ground waters.
+	\item The town water supply draws 90\% of it's water from the Katherine River, and 10\% of it's water from bore water, as shown in Figure 1. \cite{DoD2:2018}
+	\item It is reasonable to conclude that the town's water supply has experienced some PFAS contamination.
+\end{itemize}
+
+\end{block}
+
+%------------------------------------------------
+\begin{column}{\twocolwid}
+\vspace{-1cm}
+\begin{figure}
+	\includegraphics[width=1\linewidth]{water}
+	\caption{Katherine's water supply is made up of both water from the Katherine River and from bore water drawn from the Tindal Aquifer}
+\end{figure}
+\end{column}
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the first column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
+
+\begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
+
+%----------------------------------------------------------------------------------------
+%	WHAT IS THE CURRENT REGULATORY ENVIRONMENT
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Are residents really at risk?}
+\small
+\begin{itemize}
+	\item PFOA has been reported to be associated with thyroid disease and higher levels of cholesterol  and uric acid in multiple human studies, and there is some evidence for an association between PFOA and elevation of liver enzymes, and testicular and renal cancers. \cite{Christensen:2017}
+	\item Routine testing by NT Water and Power Corporation uncovered levels of PFAS that exceeded the Health Guidance Values in bore water supplies. Levels of PFAS had also been detected in the Katherine river. \cite{Richards2:2018}
+	\item These elevated levels were spikes, and NT and federal health authorities have confirmed that Katherine town water is safe to drink since the monthly average PFAS levels remain below the Health Based Guidance Values. \cite{Richards1:2018}
+\end{itemize}
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+
+\begin{column}{\onecolwid}\vspace{-.6in} % The second column within column 2 (column 2.2)
+
+%----------------------------------------------------------------------------------------
+%	METHODS
+%----------------------------------------------------------------------------------------
+\begin{block}{Alternative water supplies needed?}
+\small
+\begin{itemize}
+	\item Katherine experiences wet and dry seasons. Wet seasons are characterised by high rainfall, and dry seasons see little to no rainfall, as shown in Figure 2.
+	\item During the dry season, Katherine draws on water from the Katherine River, but tops this up with bore water. \cite{BOM:2018}
+	\item Bore water now has to pass through the interim filter and full demand during the dry cannot be met - water restrictions have been imposed to ensure water reserves are not exhausted. \cite{DoD2:2018}
+	\item Government mishap has impinged resident freedoms to enjoy existing water supplies. Whilst there may not be factual reasons for finding alternative water supplies, there are emotive ones.
+\end{itemize}
+	
+\end{block}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
+
+%----------------------------------------------------------------------------------------
+%	MAIN ARGUEMENT IN ONE PARAGRAPH
+%----------------------------------------------------------------------------------------
+
+\begin{alertblock}{Argument Summary}
+
+\small Australian Government activities on RAAF Tindal led to release of PFAS into the water supply at Katherine. Recent monitoring from NT and federal government report PFAS levels in the water supply below the maximum allowable amounts, however, additional assurance to resident safety was provided by filtering using interim water treatment plant. Currently, there is a supply shortfall being managed with water restrictions. Town residents should lobby for rainwater harvesting infrastructure to be installed on houses to address the shortfall. Managed by local tradesmen, this would see a surge in economic activity, and leave the region with increased water storage capacity readying it for forecast economic growth.
+
+\end{alertblock} 
+
+%----------------------------------------------------------------------------------------
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
+
+\begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
+
+%----------------------------------------------------------------------------------------
+%	MATHEMATICAL SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{block}{What actions have been taken to mitigate risks posed?}
+\small
+\begin{itemize}
+	\item PFAS is likely to persist in bore water, due to chemical stability - it is strong, heat resistant and durable in the environment \cite{Bartlett:2018}. Interim water treatment plant was implemented to filter bore water prior to mixing with Katherine River supply. \cite{DoD2:2018}
+\end{itemize}
+	
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+
+\begin{column}{\onecolwid} % The second column within column 2 (column 2.2)
+
+%----------------------------------------------------------------------------------------
+%	RESULTS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{What are the most desirable alternative water supplies for a resident?}
+	\small
+	\begin{itemize}
+		\item Government has responsibility to restore Katherine's water supply in both the short, and long term.
+		\item In the short term government has three options to address the water supply shortfall: bring it in by truck, set up additional filtering equipment, or provide the community with rainwater harvesting infrastructure. \cite{Azevedo:2017}
+		\item Providing town residents with rainwater harvesting infrastructure, installed by local tradesmen, would provide a small surge in economic activity which would be good for Katherine. \cite{Pelak:2016}
+		\item Additionally, when the PFAS is eventually removed from towns aquifers the town will retain the rain water harvesting infrastructures \cite{Pelak:2016}. The other two options yield no such ongoing benefits.
+		\item The additional water stored in the rainwater tanks will allow the community to expand beyond current restrictions, which may be important given that there is proposed economic expansion for the region.
+	\end{itemize}
+	
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2
+
+\end{column} % End of the second column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid} % The third column
+
+\begin{figure}
+	\includegraphics[width=1\linewidth]{rainfall}
+	\caption{Katherine's mean rainfall (mm) for years 1873 to 2018}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\begin{block}{References}
+\nocite{*} % Insert publications even if they are not cited in the poster
+\footnotesize{\bibliographystyle{unsrt}
+\bibliography{ref_list}\vspace{0.75in}}
+
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the third column
+
+\end{columns} % End of all the columns in the poster
+
+\end{frame} % End of the enclosing frame
+
+\end{document}
